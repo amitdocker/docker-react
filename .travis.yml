@@ -2,7 +2,7 @@ language: generic
 sudo: required
 services:
   - docker
-  before_install:
+before_install:
     - docker build -t amit/test -f Dockerfile.dev .
-  script:
+script:
     - docker run amit/test npm run test -- --coverage
