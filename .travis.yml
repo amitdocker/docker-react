@@ -4,8 +4,7 @@ services:
   - docker
 before_install:
     - docker build -t amitdocker/docker-react -f Dockerfile.dev .
-script:
-    - docker run -e CI=true amitdocker/docker-react npm run test
+
 deploy:
   edge: true
   provider: elasticbeanstalk
