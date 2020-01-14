@@ -16,10 +16,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Python ,React and Deops
+          Python is good
         </a>
       </header>
     </div>
   );
 }
+
 export default App;
